@@ -1,108 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Política de Privacidade – JESFAG Entregas</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Roboto', Arial, sans-serif;
-      background: #f6f8fa;
-      color: #23272f;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      background: #fff;
-      max-width: 820px;
-      margin: 40px auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 24px rgba(44,62,80,0.08);
-      padding: 40px 32px;
-    }
-    .header {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      margin-bottom: 18px;
-    }
-    .logo {
-      width: 60px;
-      height: 60px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(44,62,80,0.10);
-      background: #fff;
-      object-fit: cover;
-    }
-    h1 {
-      color: #1a73e8;
-      font-size: 2.1rem;
-      margin: 0;
-    }
-    h2 {
-      color: #2c3e50;
-      border-left: 4px solid #1a73e8;
-      padding-left: 10px;
-      margin-top: 2.2em;
-      margin-bottom: 0.7em;
-      font-size: 1.3rem;
-    }
-    h3 {
-      color: #1a73e8;
-      margin-top: 1.5em;
-      margin-bottom: 0.5em;
-      font-size: 1.08rem;
-      font-weight: 700;
-    }
-    ul {
-      margin: 0.5em 0 1.2em 1.5em;
-      padding: 0;
-    }
-    li {
-      margin-bottom: 0.4em;
-      line-height: 1.5;
-    }
-    p {
-      margin-bottom: 1.1em;
-    }
-    .last-update {
-      font-size: 0.98em;
-      color: #6c757d;
-      margin-bottom: 1.5em;
-    }
-    .highlight {
-      background: #e3f0fc;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-weight: 500;
-      color: #1a73e8;
-    }
-    .contact-card {
-      background: #f1f7ff;
-      border-left: 4px solid #1a73e8;
-      padding: 16px 20px;
-      border-radius: 8px;
-      margin-top: 1.5em;
-      font-size: 1.05em;
-    }
-    @media (max-width: 600px) {
-      .container { padding: 18px 6px; }
-      .header { flex-direction: column; gap: 8px; }
-      .logo { width: 44px; height: 44px; }
-      h1 { font-size: 1.3rem; }
-      h2 { font-size: 1.08rem; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade – JESFAG Entregas</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Roboto', Arial, sans-serif; background: #f6f8fa; color: #23272f; margin: 0; padding: 0; }
+  .container { background: #fff; max-width: 820px; margin: 40px auto; border-radius: 12px; box-shadow: 0 4px 24px rgba(44,62,80,0.08); padding: 40px 32px; }
+  .header { display: flex; align-items: center; gap: 18px; margin-bottom: 18px; }
+  .logo { width: 60px; height: 60px; border-radius: 12px; box-shadow: 0 2px 8px rgba(44,62,80,0.10); background: #fff; object-fit: cover; }
+  h1 { color: #1a73e8; font-size: 2.1rem; margin: 0; }
+  h2 { color: #2c3e50; border-left: 4px solid #1a73e8; padding-left: 10px; margin-top: 2.2em; margin-bottom: 0.7em; font-size: 1.3rem; }
+  h3 { color: #1a73e8; margin-top: 1.5em; margin-bottom: 0.5em; font-size: 1.08rem; font-weight: 700; }
+  ul { margin: 0.5em 0 1.2em 1.5em; padding: 0; }
+  li { margin-bottom: 0.4em; line-height: 1.5; }
+  p { margin-bottom: 1.1em; }
+  .last-update { font-size: 0.98em; color: #6c757d; margin-bottom: 1.5em; }
+  .highlight { background: #e3f0fc; padding: 2px 6px; border-radius: 4px; font-weight: 500; color: #1a73e8; }
+  .contact-card { background: #f1f7ff; border-left: 4px solid #1a73e8; padding: 16px 20px; border-radius: 8px; margin-top: 1.5em; font-size: 1.05em; }
+  .lang-buttons { margin: 20px 0; }
+  .lang-buttons button { margin-right: 10px; padding: 6px 12px; border-radius: 6px; border: none; background: #1a73e8; color: #fff; cursor: pointer; }
+  .lang-buttons button.active { background: #1558b0; }
+  .lang-content { display: none; }
+  .lang-content.active { display: block; }
+  @media (max-width: 600px) {
+    .container { padding: 18px 6px; }
+    .header { flex-direction: column; gap: 8px; }
+    .logo { width: 44px; height: 44px; }
+    h1 { font-size: 1.3rem; }
+    h2 { font-size: 1.08rem; }
+  }
+</style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <img class="logo" src="https://avatars.githubusercontent.com/u/213960748?s=200&v=4" alt="Logo JESFAG Entregas">
-      <h1>Política de Privacidade – JESFAG Entregas</h1>
-    </div>
-    <div class="last-update"><strong>Última atualização:</strong> 30 de setembro de 2025</div>
+<div class="container">
 
+  <div class="header">
+    <img class="logo" src="https://avatars.githubusercontent.com/u/213960748?s=200&v=4" alt="Logo JESFAG Entregas">
+    <h1>Política de Privacidade – JESFAG Entregas</h1>
+  </div>
+
+  <div class="lang-buttons">
+    <button onclick="showLang('pt')" id="btn-pt" class="active">Português</button>
+    <button onclick="showLang('en')" id="btn-en">English</button>
+    <button onclick="showLang('es')" id="btn-es">Español</button>
+  </div>
+
+  <!-- Conteúdo em Português -->
+  <div id="pt" class="lang-content active">
+    <div class="last-update"><strong>Última atualização:</strong> 30 de setembro de 2025</div>
     <p>
       Sua privacidade é fundamental para nós. Esta política detalha como o aplicativo <span class="highlight">JESFAG Entregas</span> coleta, utiliza e protege suas informações pessoais e de uso.
     </p>
@@ -110,70 +57,55 @@
     <h2>1. Coleta de Informações</h2>
     <h3>a) Informações de localização</h3>
     <p>
-      O aplicativo <strong>JESFAG Entregas</strong> coleta dados de <span class="highlight">localização em tempo real</span> apenas quando o entregador está utilizando o aplicativo para realizar entregas.
+      Coletamos dados de <span class="highlight">localização em tempo real</span> apenas quando o entregador está utilizando o app para realizar entregas.
     </p>
     <ul>
-      <li>A localização <strong>somente é compartilhada enquanto o app está em uso</strong> e necessário para o funcionamento da entrega.</li>
-      <li>O usuário é informado sobre a coleta no momento da instalação e também durante o uso do aplicativo.</li>
-      <li>Não coletamos nem compartilhamos localização em segundo plano quando o app está fechado ou não está sendo utilizado.</li>
-      <li>Esses dados são usados exclusivamente para rastrear rotas, calcular estimativas de tempo e garantir a segurança logística.</li>
+      <li>A localização é compartilhada somente enquanto o app está em uso e necessário para a entrega.</li>
+      <li>O usuário é informado no momento do uso e deve permitir o compartilhamento de localização.</li>
+      <li>Não coletamos localização quando o app está fechado.</li>
+      <li>Os dados são usados exclusivamente para rastrear rotas, estimar tempo de entrega e garantir segurança logística.</li>
     </ul>
 
     <h3>b) Informações de autenticação</h3>
-    <p>
-      Utilizamos <span class="highlight">Login com Google</span>. Ao autenticar, coletamos:
-    </p>
     <ul>
       <li>Nome</li>
-      <li>Endereço de e-mail</li>
+      <li>Email</li>
       <li>ID do Google</li>
     </ul>
 
     <h3>c) Informações técnicas</h3>
-    <p>Podemos coletar informações do dispositivo, como:</p>
     <ul>
       <li>Versão do sistema operacional</li>
       <li>Modelo do aparelho</li>
-      <li>Logs de erro para melhorias e correções</li>
+      <li>Logs de erro</li>
     </ul>
 
     <h2>2. Armazenamento de Dados</h2>
-    <p>
-      Todas as informações são armazenadas com segurança no <span class="highlight">Firebase</span> (Google Cloud Platform), utilizando autenticação, criptografia e padrões de segurança reconhecidos internacionalmente.
-    </p>
+    <p>Os dados são armazenados com segurança no <span class="highlight">Firebase</span> (Google Cloud), com autenticação e criptografia.</p>
 
     <h2>3. Notificações</h2>
-    <p>
-      O app pode enviar notificações sobre entregas, status e atualizações. O usuário pode gerenciar ou desativá-las a qualquer momento nas configurações do dispositivo.
-    </p>
+    <p>O app pode enviar notificações de entregas e status. Podem ser desativadas nas configurações do dispositivo.</p>
 
     <h2>4. Compartilhamento de Dados</h2>
-    <p>
-      Não vendemos nem compartilhamos suas informações pessoais, exceto:
-    </p>
     <ul>
       <li>Quando exigido por lei</li>
-      <li>Quando necessário para funcionamento do app (ex: Google, Firebase)</li>
+      <li>Para funcionamento do app (ex: Google, Firebase)</li>
     </ul>
 
     <h2>5. Segurança</h2>
-    <p>
-      Medidas adotadas para proteger seus dados:
-    </p>
     <ul>
-      <li>Comunicação criptografada via <span class="highlight">HTTPS</span></li>
-      <li>Autenticação segura com Firebase</li>
-      <li>Controle de acesso restrito por perfil de usuário</li>
+      <li>HTTPS para comunicação segura</li>
+      <li>Autenticação Firebase</li>
+      <li>Controle de acesso por perfil</li>
     </ul>
 
     <h2>6. Direitos do Usuário</h2>
-    <p>Você pode, a qualquer momento:</p>
     <ul>
-      <li>Solicitar a exclusão dos seus dados pessoais</li>
-      <li>Revogar o acesso à sua conta Google</li>
-      <li>Desinstalar o app, interrompendo toda coleta de informações</li>
+      <li>Solicitar exclusão de dados</li>
+      <li>Revogar acesso à conta Google</li>
+      <li>Desinstalar o app</li>
     </ul>
-    <p>Para solicitações, envie um e-mail para: <span class="highlight">jesfagentregas17@gmail.com</span></p>
+    <p>Contato: <span class="highlight">jesfagentregas17@gmail.com</span></p>
 
     <h2>7. Contato</h2>
     <div class="contact-card">
@@ -182,5 +114,154 @@
       <strong>E-mail:</strong> jesfagentregas17@gmail.com
     </div>
   </div>
+
+  <!-- Conteúdo em Inglês -->
+  <div id="en" class="lang-content">
+    <div class="last-update"><strong>Last update:</strong> June 12, 2025</div>
+    <p>
+      Your privacy is very important to us. This policy explains how the <span class="highlight">JESFAG Entregas</span> app collects, uses, and protects your personal and usage information.
+    </p>
+
+    <h2>1. Information Collection</h2>
+    <h3>a) Location Information</h3>
+    <p>
+      We collect <span class="highlight">real-time location data</span> only when the delivery driver is using the app to perform deliveries.
+    </p>
+    <ul>
+      <li>Location is shared only while the app is in use and necessary for delivery.</li>
+      <li>The user is informed when using the app and must allow location sharing.</li>
+      <li>We do not collect location when the app is closed.</li>
+      <li>Data is used solely to track routes, estimate delivery time, and ensure logistics security.</li>
+    </ul>
+
+    <h3>b) Authentication Information</h3>
+    <ul>
+      <li>Name</li>
+      <li>Email</li>
+      <li>Google ID</li>
+    </ul>
+
+    <h3>c) Technical Information</h3>
+    <ul>
+      <li>Operating system version</li>
+      <li>Device model</li>
+      <li>Error logs</li>
+    </ul>
+
+    <h2>2. Data Storage</h2>
+    <p>All information is securely stored on <span class="highlight">Firebase</span> (Google Cloud) using authentication and encryption.</p>
+
+    <h2>3. Notifications</h2>
+    <p>The app may send delivery and status notifications. Users can disable them in device settings.</p>
+
+    <h2>4. Data Sharing</h2>
+    <ul>
+      <li>As required by law</li>
+      <li>For app operation (e.g., Google, Firebase)</li>
+    </ul>
+
+    <h2>5. Security</h2>
+    <ul>
+      <li>Secure HTTPS communication</li>
+      <li>Firebase authentication</li>
+      <li>Access control by user profile</li>
+    </ul>
+
+    <h2>6. User Rights</h2>
+    <ul>
+      <li>Request data deletion</li>
+      <li>Revoke Google account access</li>
+      <li>Uninstall the app</li>
+    </ul>
+    <p>Contact: <span class="highlight">jesfagentregas17@gmail.com</span></p>
+
+    <h2>7. Contact</h2>
+    <div class="contact-card">
+      <strong>Company:</strong> JESFAG<br>
+      <strong>Responsible:</strong> Evandro Santos<br>
+      <strong>Email:</strong> jesfagentregas17@gmail.com
+    </div>
+  </div>
+
+  <!-- Conteúdo em Espanhol -->
+  <div id="es" class="lang-content">
+    <div class="last-update"><strong>Última actualización:</strong> 12 de junio de 2025</div>
+    <p>
+      Su privacidad es muy importante para nosotros. Esta política explica cómo la aplicación <span class="highlight">JESFAG Entregas</span> recopila, utiliza y protege su información personal y de uso.
+    </p>
+
+    <h2>1. Recolección de información</h2>
+    <h3>a) Información de ubicación</h3>
+    <p>
+      Recopilamos datos de <span class="highlight">ubicación en tiempo real</span> solo cuando el repartidor está usando la aplicación para realizar entregas.
+    </p>
+    <ul>
+      <li>La ubicación se comparte únicamente mientras la aplicación está en uso y es necesaria para la entrega.</li>
+      <li>El usuario es informado durante el uso y debe permitir la compartición de ubicación.</li>
+      <li>No recopilamos ubicación cuando la aplicación está cerrada.</li>
+      <li>Los datos se utilizan únicamente para rastrear rutas, estimar tiempos de entrega y garantizar la seguridad logística.</li>
+    </ul>
+
+    <h3>b) Información de autenticación</h3>
+    <ul>
+      <li>Nombre</li>
+      <li>Email</li>
+      <li>ID de Google</li>
+    </ul>
+
+    <h3>c) Información técnica</h3>
+    <ul>
+      <li>Versión del sistema operativo</li>
+      <li>Modelo del dispositivo</li>
+      <li>Registros de errores</li>
+    </ul>
+
+    <h2>2. Almacenamiento de datos</h2>
+    <p>Todos los datos se almacenan de forma segura en <span class="highlight">Firebase</span> (Google Cloud) con autenticación y cifrado.</p>
+
+    <h2>3. Notificaciones</h2>
+    <p>La app puede enviar notificaciones sobre entregas y estados. El usuario puede desactivarlas en la configuración del dispositivo.</p>
+
+    <h2>4. Compartición de datos</h2>
+    <ul>
+      <li>Cuando lo exige la ley</li>
+      <li>Para el funcionamiento de la app (ej: Google, Firebase)</li>
+    </ul>
+
+    <h2>5. Seguridad</h2>
+    <ul>
+      <li>Comunicación segura vía HTTPS</li>
+      <li>Autenticación Firebase</li>
+      <li>Control de acceso por perfil de usuario</li>
+    </ul>
+
+    <h2>6. Derechos del usuario</h2>
+    <ul>
+      <li>Solicitar eliminación de datos</li>
+      <li>Revocar acceso a la cuenta de Google</li>
+      <li>Desinstalar la app</li>
+    </ul>
+    <p>Contacto: <span class="highlight">jesfagentregas17@gmail.com</span></p>
+
+    <h2>7. Contacto</h2>
+    <div class="contact-card">
+      <strong>Empresa:</strong> JESFAG<br>
+      <strong>Responsable:</strong> Evandro Santos<br>
+      <strong>Email:</strong> jesfagentregas17@gmail.com
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function showLang(lang) {
+    const contents = document.querySelectorAll('.lang-content');
+    const buttons = document.querySelectorAll('.lang-buttons button');
+    contents.forEach(c => c.classList.remove('active'));
+    buttons.forEach(b => b.classList.remove('active'));
+    document.getElementById(lang).classList.add('active');
+    document.getElementById('btn-' + lang).classList.add('active');
+  }
+</script>
 </body>
 </html>
