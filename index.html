@@ -24,6 +24,8 @@
   .lang-buttons button.active { background: #1558b0; }
   .lang-content { display: none; }
   .lang-content.active { display: block; }
+  .lang-title { display: none; }
+  .lang-title.active { display: block; }
   @media (max-width: 600px) {
     .container { padding: 18px 6px; }
     .header { flex-direction: column; gap: 8px; }
@@ -38,27 +40,27 @@
 
   <div class="header">
     <img class="logo" src="https://avatars.githubusercontent.com/u/213960748?s=200&v=4" alt="Logo JESFAG Entregas">
-    <h1>Política de Privacidade – JESFAG Entregas</h1>
+    <!-- Titles -->
+    <div id="title-pt" class="lang-title active"><h1>Política de Privacidade – JESFAG Entregas</h1></div>
+    <div id="title-en" class="lang-title"><h1>Privacy Policy – JESFAG Deliveries</h1></div>
+    <div id="title-es" class="lang-title"><h1>Política de Privacidad – JESFAG Entregas</h1></div>
   </div>
 
+  <!-- Language Buttons -->
   <div class="lang-buttons">
     <button onclick="showLang('pt')" id="btn-pt" class="active">Português</button>
     <button onclick="showLang('en')" id="btn-en">English</button>
     <button onclick="showLang('es')" id="btn-es">Español</button>
   </div>
 
-  <!-- Conteúdo em Português -->
+  <!-- PT -->
   <div id="pt" class="lang-content active">
     <div class="last-update"><strong>Última atualização:</strong> 30 de setembro de 2025</div>
-    <p>
-      Sua privacidade é fundamental para nós. Esta política detalha como o aplicativo <span class="highlight">JESFAG Entregas</span> coleta, utiliza e protege suas informações pessoais e de uso.
-    </p>
+    <p>Sua privacidade é fundamental para nós. Esta política detalha como o aplicativo <span class="highlight">JESFAG Entregas</span> coleta, utiliza e protege suas informações pessoais e de uso.</p>
 
     <h2>1. Coleta de Informações</h2>
     <h3>a) Informações de localização</h3>
-    <p>
-      Coletamos dados de <span class="highlight">localização em tempo real</span> apenas quando o entregador está utilizando o app para realizar entregas.
-    </p>
+    <p>Coletamos dados de <span class="highlight">localização em tempo real</span> apenas quando o entregador está utilizando o app para realizar entregas.</p>
     <ul>
       <li>A localização é compartilhada somente enquanto o app está em uso e necessário para a entrega.</li>
       <li>O usuário é informado no momento do uso e deve permitir o compartilhamento de localização.</li>
@@ -115,18 +117,14 @@
     </div>
   </div>
 
-  <!-- Conteúdo em Inglês -->
+  <!-- EN -->
   <div id="en" class="lang-content">
-    <div class="last-update"><strong>Last update:</strong> June 12, 2025</div>
-    <p>
-      Your privacy is very important to us. This policy explains how the <span class="highlight">JESFAG Entregas</span> app collects, uses, and protects your personal and usage information.
-    </p>
+    <div class="last-update"><strong>Last update:</strong> September 30, 2025</div>
+    <p>Your privacy is very important to us. This policy explains how the <span class="highlight">JESFAG Deliveries</span> app collects, uses, and protects your personal and usage information.</p>
 
     <h2>1. Information Collection</h2>
     <h3>a) Location Information</h3>
-    <p>
-      We collect <span class="highlight">real-time location data</span> only when the delivery driver is using the app to perform deliveries.
-    </p>
+    <p>We collect <span class="highlight">real-time location data</span> only when the delivery driver is using the app to perform deliveries.</p>
     <ul>
       <li>Location is shared only while the app is in use and necessary for delivery.</li>
       <li>The user is informed when using the app and must allow location sharing.</li>
@@ -183,18 +181,14 @@
     </div>
   </div>
 
-  <!-- Conteúdo em Espanhol -->
+  <!-- ES -->
   <div id="es" class="lang-content">
-    <div class="last-update"><strong>Última actualización:</strong> 12 de junio de 2025</div>
-    <p>
-      Su privacidad es muy importante para nosotros. Esta política explica cómo la aplicación <span class="highlight">JESFAG Entregas</span> recopila, utiliza y protege su información personal y de uso.
-    </p>
+    <div class="last-update"><strong>Última actualización:</strong> 30 de septiembre de 2025</div>
+    <p>Su privacidad es muy importante para nosotros. Esta política explica cómo la aplicación <span class="highlight">JESFAG Entregas</span> recopila, utiliza y protege su información personal y de uso.</p>
 
     <h2>1. Recolección de información</h2>
     <h3>a) Información de ubicación</h3>
-    <p>
-      Recopilamos datos de <span class="highlight">ubicación en tiempo real</span> solo cuando el repartidor está usando la aplicación para realizar entregas.
-    </p>
+    <p>Recopilamos datos de <span class="highlight">ubicación en tiempo real</span> solo cuando el repartidor está usando la aplicación para realizar entregas.</p>
     <ul>
       <li>La ubicación se comparte únicamente mientras la aplicación está en uso y es necesaria para la entrega.</li>
       <li>El usuario es informado durante el uso y debe permitir la compartición de ubicación.</li>
@@ -254,14 +248,18 @@
 </div>
 
 <script>
-  function showLang(lang) {
-    const contents = document.querySelectorAll('.lang-content');
-    const buttons = document.querySelectorAll('.lang-buttons button');
-    contents.forEach(c => c.classList.remove('active'));
-    buttons.forEach(b => b.classList.remove('active'));
-    document.getElementById(lang).classList.add('active');
-    document.getElementById('btn-' + lang).classList.add('active');
-  }
+function showLang(lang) {
+  const contents = document.querySelectorAll('.lang-content');
+  const titles = document.querySelectorAll('.lang-title');
+  const buttons = document.querySelectorAll('.lang-buttons button');
+  contents.forEach(c => c.classList.remove('active'));
+  titles.forEach(t => t.classList.remove('active'));
+  buttons.forEach(b => b.classList.remove('active'));
+  document.getElementById(lang).classList.add('active');
+  document.getElementById('title-' + lang).classList.add('active');
+  document.getElementById('btn-' + lang).classList.add('active');
+}
 </script>
+
 </body>
 </html>
